@@ -1,0 +1,122 @@
+
+body
+{
+  background-image: url("../img/img106.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  /*(34),37,(38),40,42,(43),(44),52,55,(56),(63),66,-69-,-70-,(71),86,88,(92),-93-,96,104,105,(106),(109)*/
+}
+
+#profilepic
+{
+  margin-left:30px;
+  margin-top:-25px;
+  border-radius:75px;
+}
+
+.containment
+{
+    display: grid;
+    height:100vh;
+    width:100vw;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.containment #myname
+{
+  grid-column:2/3;
+  grid-row:2/3;
+  text-align:center;
+}
+
+.breadcrumb
+{
+  float:right;
+  font-size:18px;
+  margin:40px 10px;
+}
+
+
+#myname h1
+{
+  font-size: 100px;
+  background: -webkit-linear-gradient(coral, powderblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.wordCarousel
+{
+    font-size: 45px;
+    font-weight: 500;
+    color: coral;
+    clear:both;
+}
+
+.wordCarousel div
+{
+    overflow: hidden;
+    position: relative;
+    left:-20px;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+
+}
+
+.wordCarousel li
+{
+      font-family: Serif;
+      color: powderblue;
+      font-weight: 700;
+      padding: 0 10px;
+      height: 45px;
+      margin-bottom: 45px;
+      display:block;
+}
+
+
+
+.flip3
+{
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+#abtme .btn
+{
+  display:inline-block;
+  margin: 50px;
+  background-image: linear-gradient(to right, coral 0%, #F7BB97 51%, powderblue 100%);
+  border:none;
+  color:#331400;
+  font-weight:700;
+  padding:0.75rem;
+  padding-left:2.25rem;
+  padding-right:2.25rem;
+}
+
+.containment hr
+{
+  border-top: 2px solid;
+  border-color:white;
+}
+
+@media (max-width:500px)
+{
+
+}
